@@ -1,0 +1,129 @@
+.attribution {
+    font-size: 13px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    width: 930px;
+    height: 500px;
+    display: inline-flex;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    width: calc(930px / 3);
+    height: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.title {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 30px 0;
+    font-size: 40px;
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    padding-right: 10px;
+    padding-bottom: 90px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: hsl(0, 0%, 95%);
+    border-width: 0;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 1px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1024px) {
+    button:hover {
+        background-color: inherit;
+        color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 330px;
+        height: 1330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .description {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
